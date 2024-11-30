@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { MdEdit, MdOutlineDelete, MdOutlineRemoveRedEye } from "react-icons/md";
 import { Link, useLoaderData } from "react-router-dom"
 import Swal from "sweetalert2";
@@ -10,8 +10,12 @@ import { AuthContext } from "./AuthProvider";
 function App() {
   // Load data from the Server.
   const coffeesData = useLoaderData();
-  const [coffees, setCoffees] = useState(coffeesData);
+  const [coffees, setCoffees] = useState(Array.isArray(coffeesData) ? coffeesData : []);
   const { user, signOutUser } = useContext(AuthContext);
+
+  useEffect(() => {
+    setCoffees(coffees);
+  }, [coffeesData]);
 
   const handleLogOut = () => {
     signOutUser()
@@ -38,7 +42,7 @@ function App() {
     })
       .then((result) => {
         if (result.isConfirmed) {
-          fetch(`http://localhost:5000/coffees/${id}`, {
+          fetch(`https://espresso-coffee-server-jade.vercel.app/coffees/${id}`, {
             method: "DELETE"
           })
             .then(res => res.json())

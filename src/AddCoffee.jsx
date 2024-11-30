@@ -24,7 +24,7 @@ const AddCoffee = () => {
             photo
         };
 
-        fetch("http://localhost:5000/coffees", {
+        fetch("https://espresso-coffee-server-jade.vercel.app/coffees", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -75,7 +75,7 @@ const AddCoffee = () => {
                         </div>
                     </div>
 
-                    <div className="fflex flex-col lg:flex-row gap-3 lg:gap-6">
+                    <div className="flex flex-col lg:flex-row gap-3 lg:gap-6">
                         <div className="form-control lg:w-1/2">
                             <label className="label">
                                 <span className="label-text text-[#1a1919]/80 text-xl font-semibold font-['Raleway']">Supplier</span>

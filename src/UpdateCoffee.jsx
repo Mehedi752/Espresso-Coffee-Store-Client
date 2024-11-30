@@ -29,7 +29,7 @@ const UpdateCoffee = () => {
             photo
         };
 
-        fetch(`http://localhost:5000/coffees/${coffee._id}`, {
+        fetch(`https://espresso-coffee-server-jade.vercel.app/coffees/${coffee._id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"

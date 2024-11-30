@@ -31,7 +31,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <App></App>,
-        loader: () => fetch("http://localhost:5000/coffees"),
+        loader: () => fetch("https://espresso-coffee-server-jade.vercel.app/coffees"),
       },
       {
         path: "/add-coffee",
@@ -40,12 +40,12 @@ const router = createBrowserRouter([
       {
         path: "/update-coffee/:id",
         element: <UpdateCoffee></UpdateCoffee>,
-        loader: ({ params }) => fetch(`http://localhost:5000/coffees/${params.id}`)
+        loader: ({ params }) => fetch(`https://espresso-coffee-server-jade.vercel.app/coffees/${params.id}`)
       },
       {
         path: "/coffee-details/:id",
         element: <PrivateRoute><Details></Details></PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:5000/coffees/${params.id}`)
+        loader: ({ params }) => fetch(`https://espresso-coffee-server-jade.vercel.app/coffees/${params.id}`)
       },
       {
         path: '/login',
@@ -58,12 +58,12 @@ const router = createBrowserRouter([
       {
         path: '/users',
         element: <Users></Users>,
-        loader: () => fetch("http://localhost:5000/users")
+        loader: () => fetch("https://espresso-coffee-server-jade.vercel.app/users")
       },
       {
         path: '/users/update-profile/:id',
         element: <UpdateProfile></UpdateProfile>,
-        loader: ({ params }) => fetch(`http://localhost:5000/users/${params.id}`)
+        loader: ({ params }) => fetch(`https://espresso-coffee-server-jade.vercel.app/users/${params.id}`)
       },
       {
         path: '/forgot-password',

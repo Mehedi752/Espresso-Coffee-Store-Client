@@ -25,7 +25,7 @@ const Register = () => {
                 setUser(result.user);
                 const name = result.user.displayName, photo = result.user.photoURL, email = result.user.email, createdTime = result.user.metadata.creationTime;
                 const newUser = { name, photo, email, createdTime }
-                fetch("http://localhost:5000/users", {
+                fetch("https://espresso-coffee-server-jade.vercel.app/users", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -106,7 +106,7 @@ const Register = () => {
                 setUser(result.user)
                 const createdTime = result.user.metadata.creationTime;
                 const newUser = { name, photo, email, createdTime }
-                fetch("http://localhost:5000/users", {
+                fetch("https://espresso-coffee-server-jade.vercel.app/users", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

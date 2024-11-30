@@ -10,9 +10,6 @@ const UpdateProfile = () => {
     const navigate = useNavigate();
     const user = useLoaderData();
 
-    if (loading) {
-        return <div className="flex justify-center items-center"><span className="loading loading-spinner loading-lg text-info min-h-screen"></span></div>;
-    }
 
     if (!user) {
         return <div>User not authenticated</div>;
@@ -43,7 +40,7 @@ const UpdateProfile = () => {
             return;
         }
 
-        fetch(`http://localhost:5000/users/${user._id}`, {
+        fetch(`https://espresso-coffee-server-jade.vercel.app/users/${user._id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"
@@ -63,7 +60,7 @@ const UpdateProfile = () => {
                     navigate("/users");
                 }
                 else {
-                    setLoading(true);
+                    setLoading(false);
                     Swal.fire({
                         title: "User Not Updated",
                         icon: "error",
@@ -72,6 +69,10 @@ const UpdateProfile = () => {
                     navigate("/users");
                 }
             })
+
+        if (loading) {
+            return <div className="flex justify-center items-center"><span className="loading loading-spinner loading-lg text-info min-h-screen"></span></div>;
+        }
 
     }
 

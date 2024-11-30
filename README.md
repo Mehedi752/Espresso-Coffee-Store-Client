@@ -15,16 +15,12 @@ To enhance user experience, the application integrates toast notifications using
 - CRUD Operation: Doing Create, Read, Update & Delete data from the Database.<br>
 - User Authentication: Sign up, login, and password reset functionality.<br>
 - Profile Management: Update user profiles with real-time feedback.<br>
-- Responsive Design: Optimized for desktop, tablet and mobile devices.<br>
 - Real-time Data: Uses Firebase for real-time data updates.<br>
 - ESLint Integration: Ensures code quality and consistency.<br>
-- Customizable UI: Tailwind CSS and Daisy UI for easy customization.<br>
-- Toast Notifications: Real-time feedback using react-toastify.<br>
 - Protected Routes: Private routes for authenticated users.<br>
 - Form Validation: Client-side validation for forms.<br>
 - Error Handling: Graceful error handling and user feedback.<br>
-- SweetAlert2: A beautiful, responsive, customizable, accessible (WAI-ARIA) replacement for JavaScript's popup boxes.<br>
-- ESLint: A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.<br>
+- SweetAlert2: A beautiful, responsive, customizable, accessible replacement for JavaScript's popup boxes.<br>
 </ul>
 
 <h2 id="technologies" style="font-weight: bolder;">💻Skill Used</h2>

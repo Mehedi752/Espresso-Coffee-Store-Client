@@ -1,8 +1,11 @@
 <h1 align="center" style="font-weight: bold;">💻 <b>Espresso Coffee</b> Website With Backend & Database Integrate 💻</h1>
 
 <p align="center">Espresso Coffee is a comprehensive web application designed to manage user profiles and authentication for a coffee shop. This project is built using React and Vite, providing a fast and efficient development experience. Firebase is utilized for authentication and real-time data management, ensuring seamless user interactions and data updates.
+
 The application features a responsive design, optimized for desktop, tablet, and mobile devices, ensuring a consistent user experience across all platforms. Tailwind CSS and Daisy UI are used for easy customization and a modern, clean UI.
+
 Key functionalities include user authentication (sign up, login, password reset), profile management with real-time feedback, and CRUD operations for managing data. The application also includes protected routes for authenticated users, client-side form validation, and graceful error handling.
+
 To enhance user experience, the application integrates toast notifications using react-toastify and beautiful, responsive alerts with SweetAlert2. ESLint is used to maintain code quality and consistency throughout the project.</p>
 
 <p align="center">

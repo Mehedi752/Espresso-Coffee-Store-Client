@@ -69,25 +69,25 @@ function App() {
         <p className="text-center text-[#1a1919] text-xl font-normal font-['Raleway'] mt-[120px]">--- Sip & Savor ---</p>
         <h3 className="text-[#331a15] text-center text-[55px] font-normal font-['Rancho']">Our Popular Products</h3>
 
-        <div className="flex justify-between">
-          <Link to={"/add-coffee"} className="w-[150px]  bg-[#e3b577] font-['Rancho'] rounded-[5px] border-2 border-[#331a15]
+        <div className="flex flex-col md:flex-row justify-between lg:px-12">
+          <Link to={"/add-coffee"} className="w-[150px] mx-auto md:mx-0 bg-[#e3b577] font-['Rancho'] rounded-[5px] border-2 border-[#331a15]
          text-[#331a15] text-2xl py-3 mt-4 text-center flex justify-center ">Add Coffee</Link>
 
           {user && user.email ? (
             <button
               onClick={handleLogOut}
-              className="w-[150px] bg-[#e3b577] font-['Rancho'] rounded-[5px] border-2 border-[#331a15]
+              className="w-[150px] bg-[#e3b577] mx-auto md:mx-0 font-['Rancho'] rounded-[5px] border-2 border-[#331a15]
          text-[#331a15] text-2xl py-3 mt-4 text-center flex justify-center"
             >
               Logout
             </button>
           ) : (
-            <Link to={"/login"} className="w-[150px]  bg-[#e3b577] font-['Rancho'] rounded-[5px] border-2 border-[#331a15]
+            <Link to={"/login"} className="w-[150px] mx-auto md:mx-0 bg-[#e3b577] font-['Rancho'] rounded-[5px] border-2 border-[#331a15]
          text-[#331a15] text-2xl py-3 mt-4 text-center flex justify-center">Login</Link>
           )}
 
           {user && (
-            <Link to={"/users"} className="w-[150px]  bg-[#e3b577] font-['Rancho'] rounded-[5px] border-2 border-[#331a15]
+            <Link to={"/users"} className="w-[150px]  bg-[#e3b577] mx-auto md:mx-0 font-['Rancho'] rounded-[5px] border-2 border-[#331a15]
          text-[#331a15] text-2xl py-3 mt-4 text-center flex justify-center">Users</Link>
           )}
         </div>

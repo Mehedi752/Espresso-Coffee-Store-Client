@@ -4,14 +4,14 @@ import { Link, useLoaderData } from "react-router-dom";
 const Details = () => {
     const coffee = useLoaderData();
     return (
-        <div className="container mx-auto mt-12 mb-[120px] px-0 lg:px-[100px] 2xl:px-[200px]">
+        <div className="container mx-auto mt-12 mb-[120px] px-5 lg:px-[100px] 2xl:px-[200px]">
 
             <div className="mb-12">
                 <Link to={"/"} className="text-gray-700 flex items-center gap-2 text-3xl font-normal font-['Rancho']">
                     <IoMdArrowBack /> Back to home</Link>
             </div>
 
-            <div className="px-[110px] py-[70px] bg-[#f4f3f0] flex justify-between items-center">
+            <div className="px-6 lg:px-[110px] py-[70px] bg-[#f4f3f0] flex flex-col md:flex-row justify-between items-center">
 
                 <img src={coffee.photo} alt="" className="" />
 

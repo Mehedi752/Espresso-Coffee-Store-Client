@@ -51,27 +51,27 @@ const UpdateCoffee = () => {
     }
     return (
         <div>
-            <div className="container mx-auto mt-12 mb-[120px] px-0 lg:px-[100px] 2xl:px-[200px]">
+            <div className="container mx-auto mt-12 mb-[120px] px-5 lg:px-[100px] 2xl:px-[200px]">
 
                 <div className="mb-12">
                     <Link to={"/"} className="text-gray-700 flex items-center gap-2 text-3xl font-normal font-['Rancho']">
                         <IoMdArrowBack /> Back to home</Link>
                 </div>
-                <div className="px-[110px] py-[70px] bg-[#f4f3f0]">
-                    <h1 className="text-gray-700 text-[45px] text-center font-normal font-['Rancho']">Update Existing Coffee Details</h1>
-                    <p className="text-center text-[#1a1919]/70 text-lg font-normal font-['Raleway'] leading-[30px]">It is a long established fact that a reader will be distraceted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here.</p>
+                <div className="px-8 lg:px-[110px] py-[70px] bg-[#f4f3f0]">
+                    <h1 className="text-gray-700 text-[34px] lg:text-[45px] text-center font-normal font-['Rancho']">Update Existing Coffee Details</h1>
+                    <p className="text-center text-[#1a1919]/70 text-md lg:text-lg font-normal font-['Raleway'] leading-[30px]">It is a long established fact that a reader will be distraceted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here.</p>
 
                     <form onSubmit={handleUpdateCoffee} className="card-body">
 
-                        <div className="flex gap-6">
-                            <div className="form-control w-1/2">
+                        <div className="flex flex-col lg:flex-row gap-3 lg:gap-6">
+                            <div className="form-control lg:w-1/2">
                                 <label className="label">
                                     <span className="label-text text-[#1a1919]/80 text-xl font-semibold font-['Raleway']">Name</span>
                                 </label>
                                 <input type="text" name="name" defaultValue={coffee.name} className="input input-bordered text-[#1a1919]/60 text-base font-normal font-['Raleway']" required />
                             </div>
 
-                            <div className="form-control w-1/2">
+                            <div className="form-control lg:w-1/2">
                                 <label className="label">
                                     <span className="label-text text-[#1a1919]/80 text-xl font-semibold font-['Raleway']">Chef</span>
                                 </label>
@@ -79,15 +79,15 @@ const UpdateCoffee = () => {
                             </div>
                         </div>
 
-                        <div className="flex gap-6">
-                            <div className="form-control w-1/2">
+                        <div className="flex flex-col lg:flex-row gap-3 lg:gap-6">
+                            <div className="form-control lg:w-1/2">
                                 <label className="label">
                                     <span className="label-text text-[#1a1919]/80 text-xl font-semibold font-['Raleway']">Supplier</span>
                                 </label>
                                 <input type="text" name="supplier" defaultValue={coffee.supplier} className="input input-bordered text-[#1a1919]/60 text-base font-normal font-['Raleway']" required />
                             </div>
 
-                            <div className="form-control w-1/2">
+                            <div className="form-control lg:w-1/2">
                                 <label className="label">
                                     <span className="label-text text-[#1a1919]/80 text-xl font-semibold font-['Raleway']">Taste</span>
                                 </label>
@@ -95,15 +95,15 @@ const UpdateCoffee = () => {
                             </div>
                         </div>
 
-                        <div className="flex gap-6">
-                            <div className="form-control w-1/2">
+                        <div className="flex flex-col lg:flex-row gap-3 lg:gap-6">
+                            <div className="form-control lg:w-1/2">
                                 <label className="label">
                                     <span className="label-text text-[#1a1919]/80 text-xl font-semibold font-['Raleway']">Category</span>
                                 </label>
                                 <input type="text" name="category" defaultValue={coffee.category} className="input input-bordered text-[#1a1919]/60 text-base font-normal font-['Raleway']" required />
                             </div>
 
-                            <div className="form-control w-1/2">
+                            <div className="form-control lg:w-1/2">
                                 <label className="label">
                                     <span className="label-text text-[#1a1919]/80 text-xl font-semibold font-['Raleway']">Details</span>
                                 </label>

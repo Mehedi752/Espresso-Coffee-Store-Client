@@ -11,20 +11,20 @@ To enhance user experience, the application integrates toast notifications using
 
 <h2 id="layout">🎨Features</h2>
 <ul>
-- Create API: Creating API & Send this to the Server & Then Send to the Database.
-- CRUD Operation: Doing Create, Read, Update & Delete data from the Database.
-- User Authentication: Sign up, login, and password reset functionality.
-- Profile Management: Update user profiles with real-time feedback.
-- Responsive Design: Optimized for desktop, tablet and mobile devices.
-- Real-time Data: Uses Firebase for real-time data updates.
-- ESLint Integration: Ensures code quality and consistency.
-- Customizable UI: Tailwind CSS and Daisy UI for easy customization.
-- Toast Notifications: Real-time feedback using react-toastify.
-- Protected Routes: Private routes for authenticated users.
-- Form Validation: Client-side validation for forms.
-- Error Handling: Graceful error handling and user feedback.
-- SweetAlert2: A beautiful, responsive, customizable, accessible (WAI-ARIA) replacement for JavaScript's popup boxes.
-- ESLint: A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
+- Create API: Creating API & Send this to the Server & Then Send to the Database.<br>
+- CRUD Operation: Doing Create, Read, Update & Delete data from the Database.<br>
+- User Authentication: Sign up, login, and password reset functionality.<br>
+- Profile Management: Update user profiles with real-time feedback.<br>
+- Responsive Design: Optimized for desktop, tablet and mobile devices.<br>
+- Real-time Data: Uses Firebase for real-time data updates.<br>
+- ESLint Integration: Ensures code quality and consistency.<br>
+- Customizable UI: Tailwind CSS and Daisy UI for easy customization.<br>
+- Toast Notifications: Real-time feedback using react-toastify.<br>
+- Protected Routes: Private routes for authenticated users.<br>
+- Form Validation: Client-side validation for forms.<br>
+- Error Handling: Graceful error handling and user feedback.<br>
+- SweetAlert2: A beautiful, responsive, customizable, accessible (WAI-ARIA) replacement for JavaScript's popup boxes.<br>
+- ESLint: A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.<br>
 </ul>
 
 <h2 id="technologies" style="font-weight: bolder;">💻Skill Used</h2>
